@@ -1,0 +1,475 @@
+
+/*
+body{
+  background: #303030;
+}*/
+/*
+body{
+  background: #f0f0f2;
+}*/
+body {
+background-color: #f1f1f1;
+font:100%/2.25 Arial, Helvetica, sans-serif;
+color:rgb(200,200,200);
+}
+
+img{
+    display: inline-block;
+}
+
+
+ul {
+    list-style-type: none;
+    border:1px solid #0076a3; border-right:0px;
+    margin: 0;
+    padding: 0;
+    border:1px solid #0076a3;
+    /*background-color: #f1f1f1;*/
+    background: #fff;
+    /*overflow-y: scroll;*/
+    position: relative;
+}
+
+.sidenav {
+  width: 15%;
+  border:1px solid #f1f1f1;
+  background-color: #b03535;
+  position: fixed;
+  height: relative;
+  /*overflow-y: scroll;*/
+}
+
+input:required:invalid, .contact_form textarea:required:invalid { /* when a field is considered invalid by the browser */
+    background: #fff url(images/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+input:required:valid, .contact_form textarea:required:valid { /* when a field is considered valid by the browser */
+    background: #fff url(images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+
+p.Para-Style{
+  font-size:30px;
+}
+p.Search-Empty{
+  font-size:30px;
+  color:red;
+}
+li.Topic-list {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:20px;
+  padding: 8px 8px;
+  text-decoration: none;
+  color: black;
+  border:1px solid #0076a3; border-right:0px;
+  /*background-color: #2da9d2;*/
+  background-color: #00aced;
+}
+
+li.Topic-list-Right {
+ 
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:20px;
+  text-decoration: none;
+  color: black;
+  right:0;
+  background-color: #696969;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#tweet-table {
+  margin: 50px auto;
+  padding: 20px auto;
+  text-align: center;
+  width: 1080px; /* total computed width = 222 x 3 + 226 */
+}
+
+#tfheader{
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+ .tfbutton {
+		margin: 0;
+		padding: 5px 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:15px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+
+.tftextinput{
+    margin: 0;
+    padding: 5px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px;
+    border:1px solid #0076a3; border-right:0px;
+    border-top-left-radius: 2px 2px;
+    border-bottom-left-radius: 2px 2px;
+  }
+  
+#tweet-table .plan {
+  font: 18px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  text-shadow: 0 1px rgba(255,255,255,.8);        
+  background: #fff;      
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 20px;
+  min-width: 300px;
+  width: 250px;
+  min-height:250px; 
+   /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */      
+  float: left;
+  /*margin-left: 125px;*/
+  position: relative;
+}
+  
+#tweet-table .plan:nth-child(1) {
+  font: 18px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  text-shadow: 0 1px rgba(255,255,255,.8);        
+  background: #fff;      
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 20px;
+  min-width: 300px;
+  width: 250px;
+  min-height:250px; 
+   /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */      
+  float: left;
+  margin-left: 125px;
+  position: relative;
+}
+
+#tweet-table .plan:nth-child(3n+1) {
+  font: 18px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  text-shadow: 0 1px rgba(255,255,255,.8);        
+  background: #fff;      
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 20px;
+  min-width: 300px;
+  width: 250px;
+  min-height:250px; 
+   /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */      
+  float: left;
+  margin-left: 125px;
+  position: relative;
+}
+
+
+#tweet-table .test{
+  font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  text-shadow: 0 1px rgba(255,255,255,.8);        
+  background: #fff;      
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 20px;
+  width: 400px;
+}
+
+/*
+#tweet-table #most-popular {
+  z-index: 2;
+  top: -13px;
+  border-width: 3px;
+  padding: 30px 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);    
+}*/
+
+
+#tweet-table .plan:nth-child(odd):hover {
+   z-index: 2;
+  top: -13px;
+  border-width: 3px;
+  padding: 30px 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  /*-moz-border-radius: 5px 0 0 5px;*/
+  /*-webkit-border-radius: 5px 0 0 5px;*/
+  /*border-radius: 5px 0 0 5px;*/
+  float: left;
+  font: 20px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 400px;
+  position: relative;
+  background: #CCC;
+  background-color:#CCC;
+}
+
+#tweet-table .plan:nth-child(even):hover {
+  z-index: 2;
+  top: -13px;
+  border-width: 3px;
+  padding: 30px 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  /*-moz-border-radius: 5px 0 0 5px;*/
+  /*-webkit-border-radius: 5px 0 0 5px;*/
+  /*border-radius: 5px 0 0 5px;*/
+  float: left;
+  font: 20px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 400px;
+  position: relative;
+  background: #CCC;
+  background-color:#CCC;
+}
+
+/*
+#tweet-table .plan:nth-child(1) {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  float: left;
+  font: 20px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 400px;
+  position: relative;
+  background: #CCC;        
+}
+
+#tweet-table .plan:nth-child(odd) {
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0; 
+  font: 20px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  position: relative;
+  width: 400px;
+  background: #CCC       
+}
+
+
+#tweet-table .plan:nth-child(even) {
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  font: 20px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  border-radius: 0 5px 5px 0;
+  position: relative; 
+  width: 400px;
+  background: #CCC       
+}
+
+*/
+/* --------------- */ 
+
+#tweet-table h3 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 20px;
+  margin: -20px -20px 50px -20px;
+  background-color: #eee;
+  background-image: -moz-linear-gradient(#fff,#eee);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+  background-image: -webkit-linear-gradient(#fff, #eee);
+  background-image: -o-linear-gradient(#fff, #eee);
+  background-image: -ms-linear-gradient(#fff, #eee);
+  background-image: linear-gradient(#fff, #eee); 
+}
+
+#tweet-table #most-popular h3 {
+
+  font-size: 20px;
+  font-weight: normal;
+  padding: 20px;
+  margin: -20px -20px 50px -20px;
+  background-color: #eee;
+  background-image: -moz-linear-gradient(#fff,#eee);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+  background-image: -webkit-linear-gradient(#fff, #eee);
+  background-image: -o-linear-gradient(#fff, #eee);
+  background-image: -ms-linear-gradient(#fff, #eee);
+  background-image: linear-gradient(#fff, #eee); 
+    
+}
+
+#tweet-table .plan:nth-child(odd) h3 {
+  -moz-border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+  border-radius: 5px 0 0 0;       
+}
+
+#tweet-table .plan:nth-child(even) h3 {
+  -moz-border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;       
+} 
+
+#tweet-table h3 span {
+  display: block;
+  font: bold 25px/100px Georgia, Serif;
+  color: #777;
+  background: #fff;
+  border: 5px solid #fff;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto -65px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+  -webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+  box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+}
+
+ol.labels-list {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/ 
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+ol.labels-list > li{
+    position: relative;
+    margin-left: 2em;x
+    margin-bottom: 0.2em;
+    font-size: 1.5em;
+    padding: 0.2em;
+    background-color: #eaeaea;
+}
+ol.labels-list > li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em; 
+    font-size: 0.6em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: #464646;
+    background-color: #d0d0d0;
+     
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    z-index: 99;
+    overflow: hidden;
+     
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+/* --------------- */
+/*
+#tweet-table ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tweet-table li {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}*/
+
+/* --------------- */
+  
+#tweet-table .signup {
+  position: relative;
+  padding: 8px 20px;
+  margin: 20px 0 0 0;  
+  color: #fff;
+  font: bold 14px Arial, Helvetica;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;       
+  background-color: #72ce3f;
+  background-image: -moz-linear-gradient(#72ce3f, #62bc30);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#72ce3f), to(#62bc30));    
+  background-image: -webkit-linear-gradient(#72ce3f, #62bc30);
+  background-image: -o-linear-gradient(#72ce3f, #62bc30);
+  background-image: -ms-linear-gradient(#72ce3f, #62bc30);
+  background-image: linear-gradient(#72ce3f, #62bc30);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;     
+  text-shadow: 0 1px 0 rgba(0,0,0,.3);        
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+}
+
+#tweet-table .signup:hover {
+  background-color: #62bc30;
+  background-image: -moz-linear-gradient(#62bc30, #72ce3f);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62bc30), to(#72ce3f));      
+  background-image: -webkit-linear-gradient(#62bc30, #72ce3f);
+  background-image: -o-linear-gradient(#62bc30, #72ce3f);
+  background-image: -ms-linear-gradient(#62bc30, #72ce3f);
+  background-image: linear-gradient(#62bc30, #72ce3f); 
+}
+
+#tweet-table .signup:active, #tweet-table .signup:focus {
+  background: #62bc30;       
+  top: 2px;
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset; 
+}
+
+/* --------------- */
+
+hr{ clear:both;}
+br{ clear:both;}
+
+.clear:before, .clear:after {
+  content:"";
+  display:table
+}
+
+.clear:after {
+  clear:both
+}
+
+.clear {
+  zoom:1
+}

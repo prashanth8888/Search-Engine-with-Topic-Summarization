@@ -1,0 +1,36 @@
+<!--
+   HashSearch.html
+   Buffalo, NY
+-->
+
+<!DOCTYPE html>
+<html>
+<title>Hash Search</title>
+  <head>
+  <style>
+  .error {color: #FF0000;}
+  </style>
+    <meta charset="utf-8">
+    <title>HashSearch</title>
+   <link rel="stylesheet" type="text/css" href="Styles1.css">
+  </head>
+	 <body background="World_Map.jpg">
+	 <p style="text-align:center;size:30px;">Hash-Search<br/>The Beginning of New Era in Search</p>
+	 <ul class="tab">
+	  <li><a href="https://drive.google.com/open?id=0B-1ZyCEQ1uXvSDdrdGFHRlhCVWM" id="link" class="tablinks" target = "_blank" >About HashSearch</a></li>
+	  <li><a href="https://www.youtube.com/watch?v=t8IPAjeei5w&t=1s" id="link" class="tablinks" target="_blank" >Demo</a></li>
+	</ul>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	 <div id="tfheader">
+		<form  method="GET" action="Search_Php.php">
+		        <input type="text" class="tftextinput" name="querybox" size="21" maxlength="120" style="align:center;" placeholder="Search using HashTag" required>
+		        <input type="submit" value="Search" class="tfbutton">
+		        <span class="error"><?php echo $SearchErr;?></span><br>
+		</form>
+	<div class="tfclear"></div>
+	</div>
+  </body>
+</html>
